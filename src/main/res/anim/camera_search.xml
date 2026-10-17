@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_01"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_02"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_03"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_04"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_05"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_06"/>
+    <item
+        android:duration="500"
+        android:drawable="@drawable/sca_popup_img_search_07"/>
+</animation-list>

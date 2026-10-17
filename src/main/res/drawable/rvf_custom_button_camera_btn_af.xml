@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/rvf_camera_btn_af_press"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/rvf_camera_btn_af_dim"/>
+    <item android:drawable="@drawable/rvf_camera_btn_af"/>
+</animation-list>

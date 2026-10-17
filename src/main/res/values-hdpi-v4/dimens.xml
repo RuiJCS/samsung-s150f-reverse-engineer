@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_child_list_item_padding">2dp</dimen>
+    <dimen name="gallery_select_popup_window_width">150dp</dimen>
+    <dimen name="custom_dialog_button_margin">2dp</dimen>
+</resources>

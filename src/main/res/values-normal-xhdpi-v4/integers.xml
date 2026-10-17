@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rvf_smart_panel_text_view_top_padding">15</integer>
+    <integer name="rvf_smart_panel_text_view_text_size">14</integer>
+    <integer name="rvf_wheel_widget_text_view_text_size">22</integer>
+</resources>

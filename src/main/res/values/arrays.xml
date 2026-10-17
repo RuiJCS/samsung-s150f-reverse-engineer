@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="select_popup_zero">
+        <item>@string/all_selected</item>
+    </array>
+    <array name="select_popup_all">
+        <item>@string/all_unselected</item>
+    </array>
+    <array name="select_popup_more">
+        <item>@string/all_selected</item>
+        <item>@string/all_unselected</item>
+    </array>
+    <array name="menu_popup">
+        <item>@string/paired_cameras</item>
+        <item>@string/manual_connection_guide</item>
+        <item>@string/help</item>
+        <item>@string/end</item>
+    </array>
+    <array name="menu_popup_nfc_support">
+        <item>@string/paired_cameras</item>
+        <item>@string/manual_connection_guide</item>
+        <item>@string/nfc_connection_guide</item>
+        <item>@string/help</item>
+        <item>@string/end</item>
+    </array>
+</resources>

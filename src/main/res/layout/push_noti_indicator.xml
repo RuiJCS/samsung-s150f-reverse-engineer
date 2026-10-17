@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <ImageView
+        android:id="@+id/push_status_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="6.67dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/push_panel_send_completion"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#d7d7d7"
+            android:gravity="top"
+            android:id="@+id/push_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cm_noti_label"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#d7d7d7"
+            android:gravity="bottom"
+            android:id="@+id/push_status_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

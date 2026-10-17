@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/rvf_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rvf_custom_button_camera_flash_flash_off"/>
+    <TextView
+        android:textSize="14px"
+        android:textColor="#fdfdfd"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/rvf_menu_text"
+        android:layout_width="131px"
+        android:layout_height="wrap_content"
+        android:text="@string/rvf_flash_off"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/rvf_menu_select"
+        android:background="@drawable/rvf_check_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12px"/>
+</LinearLayout>

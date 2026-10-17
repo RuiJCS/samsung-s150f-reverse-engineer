@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="34"
+    android:versionName="1.4.0_180703"
+    android:installLocation="auto"
+    package="com.samsungimaging.connectionmanager"
+    platformBuildVersionCode="26"
+    platformBuildVersionName="8.0.0">
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CHANGE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"/>
+    <application
+        android:theme="@style/Theme.ShowWallpaper"
+        android:label="@string/app_name"
+        android:icon="@drawable/sca_popup_icon_app_sca"
+        android:allowBackup="true"
+        android:largeHeap="true">
+        <provider
+            android:name="com.samsungimaging.connectionmanager.provider.DatabaseProvider"
+            android:authorities="com.samsungimaging.connectionmanager"/>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.cm.Main"
+            android:launchMode="singleInstance"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/com.samsungimaging.connectionmanager"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.pushservice.autoshare.AutoShare"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.pushservice.selectivepush.SelectivePush"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.pullservice.MobileLink"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.pullservice.RemoteViewFinder"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.app.localgallery.LocalGallery"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/remote_viewfinder"
+            android:name="com.samsungimaging.connectionmanager.app.pullservice.demo.rvf.LiveShutter"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:label="@string/mobile_link"
+            android:name="com.samsungimaging.connectionmanager.app.pullservice.demo.ml.FileSharing"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/Theme.Default.Alert.Fullscreen"
+            android:label="@string/app_name"
+            android:name="com.samsungimaging.connectionmanager.dialog.LicenseDialog"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.samsungimaging.connectionmanager.app.cm.service.CMService"/>
+        <service android:name="com.samsungimaging.connectionmanager.app.cm.connector.CMEnableAllApsAfterConnecting.BackgroundService"/>
+    </application>
+</manifest>

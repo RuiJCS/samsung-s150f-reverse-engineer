@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#7f000000"
+        android:layout_width="match_parent"
+        android:layout_height="71px"
+        android:layout_marginBottom="44px">
+        <TextView
+            android:textSize="44px"
+            android:textColor="#ffffff"
+            android:gravity="right"
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title : "
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="44px"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:id="@+id/valueView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Value"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <org.kankan.wheel.widget.WheelView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rvf_wheelView"
+        android:background="@drawable/rvf_smart_panel_big_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

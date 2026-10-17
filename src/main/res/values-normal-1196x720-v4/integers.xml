@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rvf_top_margin_of_1st_option_menu">0</integer>
+    <integer name="rvf_top_margin_of_2nd_option_menu">130</integer>
+    <integer name="rvf_top_margin_of_3rd_option_menu">256</integer>
+    <integer name="rvf_top_margin_of_4th_option_menu">382</integer>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/tw_action_bar_icon_delete_holo_dark"
+        android:id="@+id/menu_delete"
+        android:visible="false"
+        android:title="@string/delete"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/tw_action_bar_icon_camera_holo_dark"
+        android:id="@+id/menu_camera"
+        android:visible="false"
+        android:title="@string/rvf_camera"
+        android:showAsAction="always"/>
+    <item
+        android:icon="@drawable/tw_action_bar_icon_menu_holo_dark"
+        android:id="@+id/menu_menu"
+        android:title="@string/cm_main_menu"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_multi_select"
+                android:title="@string/multi_select"/>
+            <item
+                android:id="@+id/menu_paired_camera"
+                android:title="@string/paired_cameras"/>
+            <item
+                android:id="@+id/menu_manual_connection_guide"
+                android:title="@string/manual_connection_guide"/>
+            <item
+                android:id="@+id/menu_nfc_connection_guide"
+                android:title="@string/nfc_connection_guide"/>
+            <item
+                android:id="@+id/menu_help"
+                android:title="@string/help"/>
+            <item
+                android:id="@+id/menu_license"
+                android:title="@string/license"/>
+            <item
+                android:id="@+id/menu_test_mode"
+                android:visible="false"
+                android:title="TEST MODE"/>
+        </menu>
+    </item>
+</menu>

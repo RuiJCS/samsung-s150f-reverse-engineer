@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/gallery_group_list_item_layout"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp">
+    <CheckBox
+        android:id="@+id/group_list_check_box"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="21dp"
+        android:gravity="center_vertical"
+        android:id="@+id/group_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+    <com.samsungimaging.connectionmanager.view.RecycleImageView
+        android:id="@+id/group_list_indicator"
+        android:background="@drawable/selector_expandable_list_group_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

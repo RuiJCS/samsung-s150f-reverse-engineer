@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/activity_status_type_text"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/ml_copy"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/gallery"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>

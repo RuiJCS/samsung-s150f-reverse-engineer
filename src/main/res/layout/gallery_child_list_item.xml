@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsungimaging.connectionmanager.view.ScaleAnimationRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gallery_child_list_item_layout"
+    android:padding="@dimen/gallery_child_list_item_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.samsungimaging.connectionmanager.view.RecycleImageView
+        android:id="@+id/image"
+        android:background="#4d959595"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <CheckBox
+        android:id="@+id/check_box"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:id="@+id/icon_play"
+        android:background="@drawable/sca_thumbnail_icon_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</com.samsungimaging.connectionmanager.view.ScaleAnimationRelativeLayout>

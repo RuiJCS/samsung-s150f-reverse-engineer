@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/tv_cm_refusal_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/rejected_connection"/>
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@color/text_highlight"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cm_camera_info"/>
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@color/text_highlight"
+        android:gravity="center"
+        android:id="@+id/tv_cm_refusal_camera_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>
